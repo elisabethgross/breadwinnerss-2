@@ -1,0 +1,76 @@
+{
+  "name": "breadwinnerss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "ui": "NODE_ENV=dev vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server": "NODE_ENV=dev nodemon index.js",
+    "testprod": "npm run build && NODE_ENV=dev node index.js",
+    "start": "npm run build && NODE_ENV=production node index.js",
+    "devDONTUSEYET": "concurrently \"NODE_ENV=dev nodemon index.js\" \"npm run ui\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@sendgrid/mail": "^6.4.0",
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "aws-sdk": "^2.507.0",
+    "axios": "^0.18.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "buefy": "^0.8.6",
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^4.1.1",
+    "confetti-js": "0.0.15",
+    "core-js": "^2.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1",
+    "p-limit": "^2.2.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.12.1",
+    "puppeteer": "^1.18.1",
+    "sass": "^1.23.3",
+    "sass-loader": "^8.0.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "nodemon": "^1.19.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

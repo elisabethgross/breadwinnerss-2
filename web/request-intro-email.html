@@ -1,0 +1,13 @@
+<h2>Hey {{connectorName}}!</h2>
+<h3>{{userName}} requested some job intros from your breadwinnerss feed.</h3>
+
+<p>Here is the blurb they wrote about themselves to be included with the intros: {{userBlurb}}</p>
+
+<p>They'd like intros to these roles:
+
+  <ul>
+    {{#each requestedIntros}}
+    <li><a href="{{url}}">{{jobTitle}} at {{companyName}}</a></li>
+    {{/each}}
+  </ul>
+</p>

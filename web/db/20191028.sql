@@ -1,0 +1,2 @@
+ALTER TABLE single_job_postings
+ADD COLUMN single_job_postings_company_name TEXT;
