@@ -14,9 +14,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@sendgrid/mail": "^6.4.0",
-    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
+    "@vue/cli-service": "^5.0.8",
     "aws-sdk": "^2.507.0",
     "axios": "^0.18.1",
     "bcryptjs": "^2.4.3",
